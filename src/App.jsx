@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 import ProgressoTurno from "./pages/ProgressoTurno";
-import Apontamento from "./pages/apontamento";
+import Apontamento from "./pages/Apontamento";
 import Login from "./pages/login";
 import PrivateRoute from "./routes/PrivateRoute";
 
