@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/login";
 import ProgressoTurno from "./pages/ProgressoTurno";
 import Apontamento from "./pages/apontamento";
+import Layout from "./components/Layout";
 import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
           path="/ProgressoTurno"
           element={
             <PrivateRoute>
-              <ProgressoTurno />
+              <Layout>
+                <ProgressoTurno />
+              </Layout>
             </PrivateRoute>
           }
         />
@@ -28,7 +31,9 @@ function App() {
           path="/apontamento"
           element={
             <PrivateRoute>
-              <Apontamento />
+              <Layout>
+                <Apontamento />
+              </Layout>
             </PrivateRoute>
           }
         />
