@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/login";
 import ProgressoTurno from "./pages/ProgressoTurno";
 import Apontamento from "./pages/apontamento";
-import Layout from "./components/layout";
+import Layout from "./components/LayTemp";
 import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
